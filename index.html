@@ -1,0 +1,35 @@
+<html>
+    <h1>My File in Cloud Object Storage</h1>
+<p></p>
+<p>I just learned how to work with Cloud Object Storage, including -</p> 
+<ul>
+    <li>Creating Buckets</li>
+    <li>Adding Objects to them</li>
+    <li>and Sharing them with others</li>
+</ul>
+<p> - in this Introduction to Cloud course from IBM.</b></p>
+</br>
+</br>
+<p>And I also have added a short computational logic to this page to make it interesting</p>
+<h2>Add Any Two Numbers</h2>
+<label>First Number:&nbsp; &ensp;</label></t>
+<input type="number" id="firstNumber" oninput="addTheNumbers()" value/>
+</br>
+<label>Second Number:</label></t>
+<input type="number" id="secondNumber" oninput="addTheNumbers()" value/>
+</br>
+<p id="sumOfEnteredNumbers" value=""></p>
+<p>- Thoufiq Ali Shaik</p>
+</body>
+<script>
+    function addTheNumbers() {
+        let firstNumber = parseInt(document.getElementById('firstNumber').value);
+        let secondNumber = parseInt(document.getElementById('secondNumber').value);
+        let sumOfEnteredNumbers = (firstNumber || 0) + (secondNumber || 0);
+        if((firstNumber && secondNumber) || (firstNumber === 0 || secondNumber === 0))
+            document.getElementById('sumOfEnteredNumbers').innerText = `The sum of above entered numbers is: ${sumOfEnteredNumbers}`;
+        else
+        document.getElementById('sumOfEnteredNumbers').innerText = '';
+    }
+</script>
+</html>
